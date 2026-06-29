@@ -18,5 +18,7 @@ idl-build = ["anchor-lang/idl-build"]
 
 
 [dependencies]
-anchor-lang = "0.31.1"
-
+anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
+tuktuk-program = { git = "https://github.com/helium/tuktuk.git", rev = "112afe5e80aff8199c3b779203b76b35d97c42d1" }
+solana-gpt-oracle = { version = "=0.1.1", features = ["cpi"] }
+serde_json = "1"
